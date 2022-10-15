@@ -1,0 +1,10 @@
+#todo-form {
+  color: var(--yellow);
+}
+
+#todo-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--yellow);
+  width: 400px;
+}
