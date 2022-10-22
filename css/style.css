@@ -1,8 +1,8 @@
-@import "css/clock.css";
-@import "css/todo.css";
-@import "css/variables.css";
-@import "css/top-bar.css";
-@import "css/side-bar.css";
+@import "/css/clock.css";
+@import "/css/todo.css";
+@import "/css/variables.css";
+@import "/css/top-bar.css";
+@import "/css/side-bar.css";
 
 @font-face {
   font-family: "YoonChildfundkoreaMinGuk";
