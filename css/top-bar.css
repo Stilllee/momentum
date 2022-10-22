@@ -1,0 +1,72 @@
+#top-bar {
+  display: flex;
+  border-bottom: var(--main-border);
+}
+
+#today {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  border-bottom: var(--main-border);
+}
+
+#today:hover {
+  color: var(--red);
+}
+
+#quote-box {
+  width: 850px;
+  height: 80px;
+  display: flex;
+  font-size: 25px;
+}
+
+#quote_title {
+  border-right: var(--main-border);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote_title:hover {
+  color: var(--yellow);
+}
+
+#quote_and_autor{
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#quote_and_autor p{
+  margin: 0;
+}
+
+#quote_and_autor p:first-child {
+  font-size: 23px;
+}
+
+#quote_and_autor p:hover {
+  color: var(--green);
+}
+
+#weather-box {
+  border-left: var(--main-border);
+  font-size: 30px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#weather-box:hover {
+  color: var(--blue);
+}
+
+#weather-box span:last-child {
+  font-size: 18px;
+}

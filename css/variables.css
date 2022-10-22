@@ -1,3 +1,9 @@
 :root {
-  --yellow: #FBCF5E;
+  --yellow: #F2AF01;
+  --white: #FFFFFF;
+  --gray: #FAFAFC;
+  --red: #E80103;
+  --blue: #0157EC;
+  --green: #17D719;
+  --main-border: 5px solid rgba(0, 0, 0, 0.1); 
 }

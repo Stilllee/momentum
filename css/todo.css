@@ -3,8 +3,98 @@
 }
 
 #todo-form input {
+  font-family: "YoonChildfundkoreaMinGuk";
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  width: 180px;
+  height: 35px;
+  margin-top: 6px;
+  padding: 0px 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+#todo-form input:focus {
+  animation-name: border-focus;
+  animation-duration: 0.5s;
+  background-color: var(--gray);
+  border-radius: 20px;
   border-bottom: 2px solid var(--yellow);
-  width: 400px;
+}
+
+@keyframes border-focus {
+  from {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  to {
+    border-bottom: 2px solid var(--yellow);
+  }
+}
+
+#contents {
+  width: 1000px;
+  height: 510px;
+  position: relative;
+}
+
+#todo-box {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+#todo-form {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+#todo-form h3 {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+#todo-list {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+#todo-list li {
+  font-size: 20px;
+  text-align: center;
+  height: 30px;
+  margin: 5px 10px;
+  padding: 5px 15px;
+  list-style: none;
+  border-radius: 30px;
+  background-color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-list li:hover {
+  background-color: var(--yellow);
+  color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+#todo-list span {
+  margin-right: 10px;
+}
+
+.delete {
+  color: white;
+}
+
+.delete:hover {
+  color: var(--red);
 }

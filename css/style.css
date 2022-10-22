@@ -1,24 +1,73 @@
 @import "/css/clock.css";
 @import "/css/todo.css";
 @import "/css/variables.css";
+@import "/css/top-bar.css";
+@import "/css/side-bar.css";
+
+@font-face {
+  font-family: "YoonChildfundkoreaMinGuk";
+  src: url("/fonts/YoonChildfundkoreaMinGuk.woff") format("woff");
+}
+
 
 body {
-  width: 100%;
-  height: 100%;
+  font-family: "YoonChildfundkoreaMinGuk";
+  font-weight: bolder;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {
   display: none;
 }
 
-img {
+#sketch-book {
+  width: 1500px;
+  height: 800px;
+  background-image: url("/img/sketchbook.jpg");
+  background-size: 100% 100%;
+}
+
+#bigBox {
+  margin: 70px 70px 0px 0px ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#diary-box {
+  padding-bottom: 50px;
+  width: 1000px;
+  height: 600px;
+  border: var(--main-border);
+  box-shadow: 1px 1px 10px 0.1px rgba(0, 0, 0, .1);
+}
+
+#picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#picture img {
+  width: 1000px;
+  height: 400px;;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -1;
+  top: 0;
+  left: 0;
   opacity: 80%;
 }
+
+#picture img:hover {
+  opacity: 0.5;
+}
+
+
+
+

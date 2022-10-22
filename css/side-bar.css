@@ -1,0 +1,75 @@
+#login-form h1 {
+  padding-left: 10px;
+  font-size: 38px;
+}
+
+#login-form input {
+  font-family: "YoonChildfundkoreaMinGuk";
+  text-align: center;
+  width: 250px;
+  margin-left: 20px;
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#login-form input:focus {
+  outline: none;  
+  animation-name: border-focus;
+  animation-duration: 0.5s;
+  border-bottom: 2px solid var(--yellow);
+}
+@keyframes border-focus {
+  from {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  to {
+    border-bottom: 2px solid var(--yellow);
+  }
+}
+
+#side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#site-box {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#site-box img {
+  margin-top: 30px;
+  width: 200px;
+}
+
+h1 {
+  width: 260px;
+  margin: 0 0 0 30px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.crayon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crayon div {
+  padding-right: 50px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.crayon img:hover {
+  background-color: var(--gray);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2);
+  padding: 8px 10px 8px 15px;
+  border-radius: 50px;
+}

@@ -4,39 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/639105b673.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum App</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <h3>What is your main focus for today?</h3>
-      <input type="text" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div id="sketch-book">
+      <div id="bigBox">
+        <div id=" side-bar">
+          <form id="login-form" class="hidden">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="안녕! 이름이 뭐야?"
+            />
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+          <div id="site-box">
+            <div class="crayon">
+              <a href="https://www.google.com/" target="_black">
+                <img src="/img/red.png" />
+              </a>
+              <div>구글</div>
+            </div>
+            <div class="crayon">
+              <a href="https://nomadcoders.co/" target="_black">
+                <img src="/img/yellow.png" />
+              </a>
+              <div>노마드코더</div>
+            </div>
+            <div class="crayon">
+              <a href="https://www.naver.com/" target="_black">
+                <img src="/img/light_green.png" />
+              </a>
+              <div>네이버</div>
+            </div>
+            <div class="crayon">
+              <a href="https://www.tistory.com/" target="_black">
+                <img src="/img/blue.png" />
+              </a>
+              <div>티스토리</div>
+            </div>
+          </div>
+        </div>
+        <div id="diary-box">
+          <div id="top-bar">
+            <div id="today-box">
+              <div id="today">
+                <span id="date_and_time"></span>
+              </div>
+              <div id="quote-box">
+                <div id="quote_title">
+                  <span>
+                    오늘의 <br />
+                    이야기
+                  </span>
+                </div>
+                <div id="quote_and_autor">
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div id="weather-box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="contents">
+            <div id="picture"></div>
+            <div id="todo-box">
+              <form id="todo-form">
+                <h3>오늘 할 일</h3>
+                <input type="text" required />
+              </form>
+              <ul id="todo-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/greetings.js"></script>
+      <script src="js/clock.js"></script>
+      <script src="js/quotes.js"></script>
+      <script src="js/background.js"></script>
+      <script src="js/todo.js"></script>
+      <script src="js/weather.js"></script>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
-    <script src="js/greetings.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
   </body>
 </html>
