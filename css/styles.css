@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "YoonChildfundkoreaMinGuk";
-  src: url("fonts/YoonChildfundkoreaMinGuk.woff") format("woff");
+  src: url("../fonts/YoonChildfundkoreaMinGuk.woff") format("woff");
 }
 
 
@@ -28,7 +28,7 @@ body {
 #sketch-book {
   width: 1500px;
   height: 800px;
-  background-image: url("img/sketchbook.jpg");
+  background-image: url("../img/sketchbook.jpg");
   background-size: 100% 100%;
 }
 
